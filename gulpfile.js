@@ -5,12 +5,6 @@ const uglify = require('gulp-uglify')
 const obfuscate = require('gulp-obfuscate');
 const imagemin = require('gulp-imagemin');
 
-gulp.task('images', () => {
-    return gulp.src('./source/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/images');)
-});
-
 function comprimeImagens() {
     return gulp.src('./source/images/*', {encoding:false})
         .pipe(imagemin())
